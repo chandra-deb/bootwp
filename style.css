@@ -1016,6 +1016,12 @@ footer li.signup-link a:hover {
 	left: 1px;
 }
 
+
+/* Custom Css */
+.current-menu-item {
+	background: #080808;
+}
+
 /* ==== MEDIA QUERIES ==== */
 
 @media screen and (max-width : 991px) {

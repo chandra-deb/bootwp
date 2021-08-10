@@ -67,14 +67,15 @@
                             </button>
                             <?php the_custom_logo() ?>
                         </div>
-                        <div class="navbar-collapse collapse">
-                            <ul class="nav navbar-nav navbar-right">
-                                <li class="active"><a href="/">Home</a></li>
-                                <li><a href="blog.html">Blog</a></li>
-                                <li><a href="resources.html">Resources</a></li>
-                                <li><a href="contact.html">Contact</a></li>
-                            </ul>
-                        </div>
+                        <?php wp_nav_menu(
+                            array(
+                                'theme_location' => 'primary',
+                                'container_class' => 'navbar-collapse collapse',
+                                'menu_class' => 'nav navbar-nav navbar-right',
+
+                            )
+                        ) ?>
+
                     </div>
                 </div>
 
